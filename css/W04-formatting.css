@@ -1,0 +1,271 @@
+  * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #ebf8ff;
+            
+            line-height: 1.6;
+        }
+        footer,
+        /* .hero, */
+        /* .card, */
+        .tip-box {
+            border: 1px solid rgb(52, 191, 233); 
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        /* header */
+        header{
+            background: linear-gradient(to right, #014ff8, #15bafc);
+            padding: 20px;
+            color: white;
+            box-shadow: 0 4px 8px rgb(11, 194, 240);
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .brand-icon{font-size: 50px;}
+        .brand-text p {font-size: 14px;}
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+        }
+        nav a :hover{
+            color: rgb(10, 10, 10);
+            text-decoration: underline;
+            margin-left: 20px;
+        } 
+
+        /* herosection */
+        .hero{
+            padding: 45px 70px 25px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .hero-icon{
+            background: linear-gradient(135deg, #014ff8, #15bafc);/*background-color: rgb(39, 39, 255); */
+            padding: 20px;
+            border-radius: 20px;
+
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        
+         .hero-text{}
+         .hero-text h1{
+            color: rgb(4, 4, 105);
+            font-size: 50px;
+         }
+         .hero-text p{
+            color: rgb(41, 40, 40);
+            font-size: 20px;
+         }
+
+        /* mainsection */
+        .container{
+            /* max-width: 1200px; */
+
+            width: 100%;
+           
+            padding: 0 60px ;
+
+            /* background-color: blue; */
+        }
+
+        .card-grid{
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+
+            /* background-color: rgb(102, 212, 240); */
+        }
+
+        .card{
+            background-color: white;
+
+            border-radius: 20px;
+            box-shadow: 0px 4px 8px rgb(11, 194, 240);
+            border: rgb(243, 160, 6);
+
+            overflow: hidden;/การซ่อนมุม */
+
+            /* padding: 20px; */
+        }
+
+        .card-header{
+            background-color: rgb(65, 0, 245);
+
+            color: rgb(253, 253, 253);
+            font-weight: bold;
+            font-size: 20px;
+
+            padding: 20px;
+        }
+
+        .card-body{
+            padding: 20px;
+        }
+
+        .card-header-icon{
+            color: #ffffff;
+            background-color: #15bafc;
+            padding: 10px;
+
+           font-size: ;
+           display: inline-flex;
+           width: 38px;
+           height: 38px;
+           justify-content: center;
+           align-items: center;
+
+            border-radius: 50%;  
+        }
+
+        .purple-bg{background-color: rgb(243, 179, 243);}
+        .purple-text{color: rgb(240, 128, 240);}
+
+
+    /* card1 */
+        .format-row{
+            padding: 8px 0;
+            border-bottom: 1px solid rgb(114, 114, 114);
+
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 12px;
+        }
+
+        .label{
+            /* background-color: blue; */
+            color: white;
+
+            padding: 4px 8px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .b-label{background-color: rgb(243, 197, 128);}
+        .strong-label{background-color: #6191f8;}
+        .i-label{background-color: #74d0f5;}
+        .em-label{background-color: rgb(110, 245, 245);}
+        .u-label{background-color: rgb(113, 238, 165);}
+        .mark-label{background-color: rgb(112, 252, 135);}
+        .small-label{background-color: rgb(247, 215, 110);}
+        .del-label{background-color: rgb(240, 106, 65);}
+        .sup-label{background-color: rgb(241, 140, 245);}
+        .sub-label{background-color: rgb(236, 137, 137);}
+
+        /* card2 */
+        .code-box{
+            background-color: black;
+            padding: 15px ;
+            border-radius: 12px ;
+
+        }
+        pre{
+            font-size: 15px;
+            left: 1.6px;
+            line-height: 1.8;
+            color: rgb(251, 255, 250);
+        }
+        .line-no{
+            color: #b3aeae;
+            width: 30px;
+
+            display: inline-block;
+        }
+        .html-tag{color: red;}
+        .html-text{color: white;}
+        
+        /* card3 */
+        .activity-list{list-style: none;}
+
+        .activity-list li{
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .check{
+            background-color: rgb(236, 247, 88);
+
+            display: inline-flex;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 24px;
+            
+        }
+
+        .check-blue{background-color: blue;}
+        .check-yellow{background-color: yellow;}
+        .check-orange{background-color: orange;}
+        .check-green{background-color: green;}
+        .check-red{background-color: red;}
+
+        /* Tipbox */
+.tip-box {
+  display: flex;
+  align-items: flex-start; 
+  gap: 16px;               
+  background-color: #fff9e6;
+  border: 1px solid #ffd466;
+  border-radius: 12px;
+  padding: 20px 24px;
+}
+
+.tip-box-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffcc00;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  
+}
+
+.tip-box-content {
+  display: flex;
+  flex-direction: column; 
+  gap: 8px;               
+}
+
+.tip-box-header {
+  color: #b35900;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.tip-box-text {
+  color: #555555;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.highlight-blue {
+  color: #007bff;
+  font-weight: bold;
+}
